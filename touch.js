@@ -23,6 +23,21 @@ dut.ontouchstart = function(evt) {
     document.getElementById("tRotationAngle").textContent = evt.targetTouches[0].rotationAngle;
     document.getElementById("tForce").textContent = evt.targetTouches[0].force;
   }
+  document.getElementById("changedTouchesLength").textContent = evt.changedTouches.length;
+  if (evt.changedTouches.length > 0) {
+    document.getElementById("cIdentifier").textContent = evt.changedTouches[0].identifier;
+    document.getElementById("cScreenX").textContent = evt.changedTouches[0].screenX;
+    document.getElementById("cScreenY").textContent = evt.changedTouches[0].screenY;
+    document.getElementById("cClientX").textContent = evt.changedTouches[0].clientX;
+    document.getElementById("cClientY").textContent = evt.changedTouches[0].clientY;
+    document.getElementById("cPageX").textContent = evt.changedTouches[0].pageX;
+    document.getElementById("cPageY").textContent = evt.changedTouches[0].pageY;
+    document.getElementById("cTarget").textContent = evt.changedTouches[0].target.tagName + "#" + evt.changedTouches[0].target.id;
+    document.getElementById("cRadiusX").textContent = evt.changedTouches[0].radiusX;
+    document.getElementById("cRadiusY").textContent = evt.changedTouches[0].radiusY;
+    document.getElementById("cRotationAngle").textContent = evt.changedTouches[0].rotationAngle;
+    document.getElementById("cForce").textContent = evt.changedTouches[0].force;
+  }
 }
 
 dut.ontouchend = function(evt) {
@@ -46,6 +61,21 @@ dut.ontouchend = function(evt) {
     document.getElementById("tRadiusY").textContent = evt.targetTouches[0].radiusY;
     document.getElementById("tRotationAngle").textContent = evt.targetTouches[0].rotationAngle;
     document.getElementById("tForce").textContent = evt.targetTouches[0].force;
+  }
+  document.getElementById("changedTouchesLength").textContent = evt.changedTouches.length;
+  if (evt.changedTouches.length > 0) {
+    document.getElementById("cIdentifier").textContent = evt.changedTouches[0].identifier;
+    document.getElementById("cScreenX").textContent = evt.changedTouches[0].screenX;
+    document.getElementById("cScreenY").textContent = evt.changedTouches[0].screenY;
+    document.getElementById("cClientX").textContent = evt.changedTouches[0].clientX;
+    document.getElementById("cClientY").textContent = evt.changedTouches[0].clientY;
+    document.getElementById("cPageX").textContent = evt.changedTouches[0].pageX;
+    document.getElementById("cPageY").textContent = evt.changedTouches[0].pageY;
+    document.getElementById("cTarget").textContent = evt.changedTouches[0].target.tagName + "#" + evt.changedTouches[0].target.id;
+    document.getElementById("cRadiusX").textContent = evt.changedTouches[0].radiusX;
+    document.getElementById("cRadiusY").textContent = evt.changedTouches[0].radiusY;
+    document.getElementById("cRotationAngle").textContent = evt.changedTouches[0].rotationAngle;
+    document.getElementById("cForce").textContent = evt.changedTouches[0].force;
   }
 }
 
@@ -71,6 +101,21 @@ dut.ontouchmove = function(evt) {
     document.getElementById("tRotationAngle").textContent = evt.rotationAngle;
     document.getElementById("tForce").textContent = evt.force;
   }
+  document.getElementById("changedTouchesLength").textContent = evt.changedTouches.length;
+  if (evt.changedTouches.length > 0) {
+    document.getElementById("cIdentifier").textContent = evt.changedTouches[0].identifier;
+    document.getElementById("cScreenX").textContent = evt.changedTouches[0].screenX;
+    document.getElementById("cScreenY").textContent = evt.changedTouches[0].screenY;
+    document.getElementById("cClientX").textContent = evt.changedTouches[0].clientX;
+    document.getElementById("cClientY").textContent = evt.changedTouches[0].clientY;
+    document.getElementById("cPageX").textContent = evt.changedTouches[0].pageX;
+    document.getElementById("cPageY").textContent = evt.changedTouches[0].pageY;
+    document.getElementById("cTarget").textContent = evt.changedTouches[0].target.tagName + "#" + evt.changedTouches[0].target.id;
+    document.getElementById("cRadiusX").textContent = evt.changedTouches[0].radiusX;
+    document.getElementById("cRadiusY").textContent = evt.changedTouches[0].radiusY;
+    document.getElementById("cRotationAngle").textContent = evt.changedTouches[0].rotationAngle;
+    document.getElementById("cForce").textContent = evt.changedTouches[0].force;
+  }
 }
 
 dut.ontouchcancel = function(evt) {
@@ -94,5 +139,20 @@ dut.ontouchcancel = function(evt) {
     document.getElementById("tRadiusY").textContent = evt.targetTouches[0].radiusY;
     document.getElementById("tRotationAngle").textContent = evt.targetTouches[0].rotationAngle;
     document.getElementById("tForce").textContent = evt.targetTouches[0].force;
+  }
+  document.getElementById("changedTouchesLength").textContent = evt.changedTouches.length;
+  if (evt.changedTouches.length > 0) {
+    document.getElementById("cIdentifier").textContent = evt.changedTouches[0].identifier;
+    document.getElementById("cScreenX").textContent = evt.changedTouches[0].screenX;
+    document.getElementById("cScreenY").textContent = evt.changedTouches[0].screenY;
+    document.getElementById("cClientX").textContent = evt.changedTouches[0].clientX;
+    document.getElementById("cClientY").textContent = evt.changedTouches[0].clientY;
+    document.getElementById("cPageX").textContent = evt.changedTouches[0].pageX;
+    document.getElementById("cPageY").textContent = evt.changedTouches[0].pageY;
+    document.getElementById("cTarget").textContent = evt.changedTouches[0].target.tagName + "#" + evt.changedTouches[0].target.id;
+    document.getElementById("cRadiusX").textContent = evt.changedTouches[0].radiusX;
+    document.getElementById("cRadiusY").textContent = evt.changedTouches[0].radiusY;
+    document.getElementById("cRotationAngle").textContent = evt.changedTouches[0].rotationAngle;
+    document.getElementById("cForce").textContent = evt.changedTouches[0].force;
   }
 }
