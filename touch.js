@@ -96,26 +96,3 @@ dut.ontouchcancel = function(evt) {
     document.getElementById("tForce").textContent = evt.targetTouches[0].force;
   }
 }
-
-dut.onmousedown = function(evt) {
-  dut.dispatchEvent(new Event("touchstart"));
-  document.getElementById("altKey").textContent = evt.altKey;
-  document.getElementById("ctrlKey").textContent = evt.ctrlKey;
-  document.getElementById("metaKey").textContent = evt.metaKey;
-  document.getElementById("shiftKey").textContent = evt.shiftKey;
-  document.getElementById("targetTouchesLength").textContent = evt.targetTouches.length;
-  if (evt.targetTouches.length > 0) {
-    document.getElementById("tIdentifier").textContent = evt.targetTouches[0].identifier;
-    document.getElementById("tScreenX").textContent = evt.targetTouches[0].screenX;
-    document.getElementById("tScreenY").textContent = evt.targetTouches[0].screenY;
-    document.getElementById("tClientX").textContent = evt.targetTouches[0].clientX;
-    document.getElementById("tClientY").textContent = evt.targetTouches[0].clientY;
-    document.getElementById("tPageX").textContent = evt.targetTouches[0].pageX;
-    document.getElementById("tPageY").textContent = evt.targetTouches[0].pageY;
-    document.getElementById("tTarget").textContent = evt.targetTouches[0].target.tagName + "#" + evt.targetTouches[0].target.id;
-    document.getElementById("tRadiusX").textContent = evt.targetTouches[0].radiusX;
-    document.getElementById("tRadiusY").textContent = evt.targetTouches[0].radiusY;
-    document.getElementById("tRotationAngle").textContent = evt.targetTouches[0].rotationAngle;
-    document.getElementById("tForce").textContent = evt.targetTouches[0].force;
-  }
-}
