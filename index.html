@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        color: white;
+      }
+      body {
+        margin: 0;
+        background-color: #202028;
+      }
+      #testdiv {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 600px;
+        height: 300px;
+        transform: translate(-50%, -50%);
+        border: 1px solid white;
+      }
+      #stats {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        min-height: 50px;
+        margin: 5px;
+        border: 1px solid white;
+        padding: 5px;
+      }
+      .stats-item {
+        padding-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="testdiv"></div>
+    <div id="stats">
+      <div class="stats-item">
+        <span></span>
+      </div>
+      <div class="stats-item">
+        <span>altKey: </span>
+        <span id="altKey"></span>
+      </div>
+    </div>
+    <script type="text/javascript" src="touch.js"></script>
+  </body>
+</html>
