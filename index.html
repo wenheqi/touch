@@ -23,7 +23,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 200px;
+        min-width: 200px;
         min-height: 50px;
         margin: 5px;
         border: 1px solid white;
@@ -55,6 +55,22 @@
       <div class="stats-item">
         <span>shiftKey: </span>
         <span id="shiftKey"></span>
+      </div>
+      <div class="stats-item">
+        <span>targetTouches: </span><br>
+        <span>`-length: </span><span id="targetTouchesLength"></span><br>
+        <span>`-[0].identifier: </span><span id="tIdentifier"></span><br>
+        <span>`-[0].screenX: </span><span id="tScreenX"></span><br>
+        <span>`-[0].screenY: </span><span id="tScreenY"></span><br>
+        <span>`-[0].clientX: </span><span id="tClientX"></span><br>
+        <span>`-[0].clientY: </span><span id="tClientY"></span><br>
+        <span>`-[0].pageX: </span><span id="tPageX"></span><br>
+        <span>`-[0].pageY: </span><span id="tPageY"></span><br>
+        <span>`-[0].target: </span><span id="tTarget"></span><br>
+        <span>`-[0].radiusX: </span><span id="tRadiusX"></span><br>
+        <span>`-[0].radiusY: </span><span id="tRadiusY"></span><br>
+        <span>`-[0].rotationAngle: </span><span id="tRotationAngle"></span><br>
+        <span>`-[0].force: </span><span id="tForce"></span><br>
       </div>
     </div>
     <script type="text/javascript" src="touch.js"></script>
